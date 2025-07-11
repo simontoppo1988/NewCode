@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple HTML Form</title>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+
+  <form action="/submit" method="post">
+   
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+   
+    <label for="building">Building Name:</label><br>
+    <input list="buildings" id="building" name="building" placeholder="Enter or select building" required>
+    <datalist id="buildings">
+      <option value="Mumbai">
+      <option value="Pune">
+      <option value="Delhi">
+      <option value="Jaipur">
+    </datalist><br><br>
+
+   
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+  
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+   
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+ 
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
